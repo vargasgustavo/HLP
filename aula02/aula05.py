@@ -7,7 +7,7 @@ def multiplicacao(x, y):
 def divisao(x, y):
     return x / y
 
-def calcula(calculadora):
+def calcula(calculadora, x , y):
     calculadora = input("Escolha o tipo de cálculo: ")
     if calculadora == "+":
         soma()
