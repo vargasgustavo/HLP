@@ -11,7 +11,7 @@ Label(app, image = img).place(x = 20,y = 20)
 Label(app, text = 'Cadastro de Produtos',
       font = ("Roboto 40")).place(x = 200, y = 20)
 Label(app, text = "ID").place(x = 200, y = 200)
-txt_nome = Entry(app, width = 70 height = 20)
+txt_nome = Entry(app)
 txt_nome.place(x = 250, y = 200)
 btn_ok = Button(app, text = "Salvar", command = salvar)
 btn_fim = Button(app, text = "Sair", command = quit)
