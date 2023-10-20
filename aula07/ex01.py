@@ -32,7 +32,7 @@ def listagem():
         idade = retira_enter(idade)
         altura = f.readline()
         altura = retira_enter(altura)
-        print("|%-30s|%-5s|%-5s|"%(nome, idade, altura))
+        print("|%-30s|%2s|%3s|"%(nome, idade, altura))
     print()
     temp = input("Tecle enter para continuar")
     f.close()
