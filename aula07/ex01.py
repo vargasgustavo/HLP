@@ -12,7 +12,7 @@ def cadastro():
     nome = input("Nome: ")
     idade = input("Idade: ")
     altura = input("Altura: ")
-    f = open("aggenda.db", "a")
+    f = open("agenda.db", "a")
     f.write(nome + "\n")
     f.write(idade + "\n")
     f.write(altura + "\n")
@@ -32,7 +32,22 @@ def listagem():
         idade = retira_enter(idade)
         altura = f.readline()
         altura = retira_enter(altura)
-        print("|%-30s|%20s|%20s|"%(nome, idade, altura))
+        print("|%-30s|%-5s|%-5s|"%(nome, idade, altura))
     print()
     temp = input("Tecle enter para continuar")
     f.close()
+
+op = 1
+while op != 0:
+    os.system("cls")
+    print()
+    print("1 - Cadastro")
+    print("2 - Listar")
+    print("0 - Fim")
+    op = int(input("Opção: "))
+    if op == 1:
+        cadastro()
+    if op == 2:
+        listagem()
+
+print("Fim")
