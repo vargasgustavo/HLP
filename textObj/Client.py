@@ -4,17 +4,17 @@ p = Pessoa
 
 def cadastro():
     print("+---------------------+")
-    p._cod = input("| Digite seu código:")
-    p._nome = input("| Digite seu nome:")
-    p._email = input("| Digite seu email:")
-    p._celular = input("| Digite seu celular:")
-    p._RG = input("| Digite seu RG:")
-    p._CPF = input("| Digite seu CPF:")
-    p._cep = input("| Digite seu cep:")
-    p._rua = input("| Digite seu rua:")
-    p._bairro = input("| Digite seu bairro:")
-    p._cidade = input("| Digite seu cidade:")
-    p._estado = input("| Digite seu estado:")
+    p.setcod(input("| Digite seu código:"))
+    p.setnome(input("| Digite seu nome:"))
+    p.setemail(input("| Digite seu email:"))
+    p.setcelular(input("| Digite seu celular:"))
+    p.setRG(input("| Digite seu RG:"))
+    p.setCPF(input("| Digite seu CPF:"))
+    p.setcep(input("| Digite seu cep:"))
+    p.setrua(input("| Digite seu rua:"))
+    p.setbairro(input("| Digite seu bairro:"))
+    p.setcidade(input("| Digite seu cidade:"))
+    p.setestado(input("| Digite seu estado:"))
     print("+---------------------+")
 
 def ler():

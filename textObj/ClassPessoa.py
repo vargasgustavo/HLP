@@ -1,16 +1,48 @@
-class Pessoa:
-    def __init__(self, cod: int, nome: str, email: str, celular: int, RG: int, CPF: int, cep: int, rua: str, bairro: str, cidade: str, estado: str):
+class Pessoa:  
+    _cod = ""
+    def setCod(self, cod):
         self._cod = cod
+                
+    _nome = ""
+    def setNome(self, nome):
         self._nome = nome
+                    
+    _email = ""
+    def setEmail(self, email):
         self._email = email
+                    
+    _celular = ""
+    def setCelular(self, celular):
         self._celular = celular
-        self._RG = RG
-        self._CPF = CPF
+                    
+    _rg = ""
+    def setRG(self, rg):
+        self._rg = rg
+                
+    _cpf = ""
+    def setCPF(self, cpf):
+        self._cpf = cpf
+                
+    _cep = ""
+    def setCep(self, cep):
         self._cep = cep
+                
+    _rua = ""
+    def setRua(self, rua):
         self._rua = rua
+    
+    _bairro = ""
+    def setBairro(self, bairro):
         self._bairro = bairro
+                
+    _cidade = ""
+    def setCidade(self, cidade):
         self._cidade = cidade
+
+    _estado = ""
+    def setEstado(self, estado):
         self._estado = estado
+
 
     def getCod(self):
         return self._cod
@@ -25,10 +57,10 @@ class Pessoa:
         return self._celular
     
     def getRG(self):
-        return self._RG
+        return self._rg
     
     def getCPF(self):
-        return self._CPF
+        return self._cpf
     
     def getCep(self):
         return self._cep
